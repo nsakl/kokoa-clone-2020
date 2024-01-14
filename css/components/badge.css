@@ -1,0 +1,27 @@
+.badge {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.badge__gear {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 96px;
+  bottom: 18px;
+}
+
+.badge__gear-more {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  right: -8px;
+  bottom: 18px;
+}

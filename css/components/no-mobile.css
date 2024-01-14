@@ -1,0 +1,44 @@
+#no-landscape,
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-color: var(--yellow);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+#landscape {
+  background-color: none;
+}
+
+@media screen and (max-width: 1025px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #no-landscape {
+    display: none;
+  }
+}
+
+@keyframes rotateScreen {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: translateZ(360deg);
+  }
+}
+
+#no-landscape .fa-rotate-right {
+  animation: rotateScreen 3s linear infinite;
+}
